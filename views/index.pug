@@ -1,0 +1,128 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="zero.css")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;500;700&family=Oswald:wght@700&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="style.css")
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6P7145H0N"></script>
+        script.          
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date())
+
+            gtag('config', 'G-X6P7145H0N')
+
+        title KvantPlus
+    body 
+        .wrapper 
+            include Partical view/header.pug
+            main.page
+                
+                .page__main.main
+                    .main__container._container 
+                        .main__title ANDROID TV BOX
+                        .main__sub-title Потрібна андроїд приставка? Тоді ти по адресу.
+                        a.main__button(href="#asdf") 
+                    .main__img 
+                        img(src="/Image/wall.png", alt="wall")
+                include Partical view/RX96Max.pug
+                include Partical view/LX96MiniPlus.pug
+                include Partical view/RX96mini1.pug
+                include Partical view/LSweetTv.pug
+                
+                
+                .page__more-item.more-item 
+                    .more-item__container._container 
+                            h3.more-item__link Всі приставки
+                  
+                .page__items.items
+                    .items__container._container 
+                        .items__body 
+                            //- .items__column
+                                .items__item 
+                                    .items__image 
+                                        img(src="Image/Card/x96mini.png", alt="")
+                                    .items__text 
+                                        p.nameItem X96 mini
+                                        p.priceItem 1100 грн.
+                                    .items__characteristics.characteristics
+                                        .characteristics__body 
+                                            ul.characteristics__list 
+                                                li.characteristics__str
+                                                    span Оперативна пам'ять
+                                                    span 2 ГБ
+                                                li.characteristics__str 
+                                                    span Внутрішня пам'ять
+                                                    span 16 ГБ
+                                                li.characteristics__str  
+                                                    span Процесор 
+                                                    span Amlogic S905W
+                                                li.characteristics__str  
+                                                    span Операційна система
+                                                    span Android 7.1
+                                    .items__order.btn__order Замовити
+                                
+
+                
+
+
+                include Partical view/form.pug
+                .page__contacts.contacts
+                    .contacts__container._container     
+                        .contacts__text 
+                            .contacts__title#Contact Наші контакти
+                            .contacts__paragraph Зв'яжись з нами 
+                        .contacts__cards.cards 
+                            .cards__column 
+                                .cards__item
+                                    a(href="mailto:kvantplus.if@gmail.com").cards__img 
+                                        img(src="Image/email.svg", alt="")
+                                    .cards__text 
+                                        .cards__title Електронна пошта
+                                        .cards__paragraph   
+                                            a(href="mailto:kvantplus.if@gmail.com") kvantplus.if@gmail.com   
+                            .cards__column 
+                                .cards__item
+                                    a(href="https://www.google.com/maps/place/%D0%9A%D0%92%D0%90%D0%9D%D0%A2+%D0%BF%D0%BB%D1%8E%D1%81/@48.9247844,24.7003773,15z/data=!4m2!3m1!1s0x0:0x3083fd322d781d31?sa=X&ved=2ahUKEwj73cnM8fz2AhWx_CoKHUBOCCcQ_BJ6BAhTEAU").cards__img 
+                                        img(src="Image/map.svg", alt="")
+                                    .cards__text 
+                                        .cards__title Геолокація
+                                        .cards__paragraph 
+                                            a(href="https://www.google.com/maps/place/%D0%9A%D0%92%D0%90%D0%9D%D0%A2+%D0%BF%D0%BB%D1%8E%D1%81/@48.9247844,24.7003773,15z/data=!4m2!3m1!1s0x0:0x3083fd322d781d31?sa=X&ved=2ahUKEwj73cnM8fz2AhWx_CoKHUBOCCcQ_BJ6BAhTEAU") вулиця Манюха, 1, Івано-Франківськ  
+                                                    
+                                                       
+                            .cards__column 
+                                .cards__item
+                                    a(href="tel:+380996754715").cards__img 
+                                        img(src="Image/phone.svg", alt="")
+                                    .cards__text 
+                                        .cards__title Телефон
+                                        .cards__paragraph   
+                                            p
+                                                a(href="tel:+380996754715") +380996754715            
+                                            p
+                                                a(href="tel:+380661090222") +380661090222       
+                
+                include  Partical view/googleMap.pug
+        
+            include Partical view/footer.pug
+                    
+
+.btn__up  
+.modalTH 
+        p Ми прийняли вашу за'явку.
+        p Чекайте дзвінка)
+include Partical view/burger.pug
+include Partical view/modal.pug
+
+
+script(src="Script/script.js",type="module")
+
+
+
+ 

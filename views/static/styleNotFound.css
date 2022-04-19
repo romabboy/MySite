@@ -1,0 +1,20 @@
+.header{
+    background: url("/Image/wall.png");
+    height: 100px;
+    
+}
+
+.page__not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    margin: 0 0 200px 0;
+}
+
+.page__not-found p {
+    flex: 1 1 100%;
+    text-align: center;
+}

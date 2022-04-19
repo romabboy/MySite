@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="zero.css")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;500;700&family=Oswald:wght@700&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="style.css")
+        link(rel="stylesheet", href="styleFindUs.css")
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6P7145H0N"></script>
+        script.          
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date())
+
+            gtag('config', 'G-X6P7145H0N')
+        title Document
+    body 
+         .wrapper 
+            include Partical view/header.pug
+            main.page__main    
+                include  Partical view/googleMap.pug
+                .main__text 
+                    p.main__nameShop  КВАНТ плюс
+                    p.main__addres м.Івано-Франківськ вул.Манюха 1
+                    a(href="https://www.google.com/maps/place/%D0%9A%D0%92%D0%90%D0%9D%D0%A2+%D0%BF%D0%BB%D1%8E%D1%81/@48.9247844,24.7003773,15z/data=!4m2!3m1!1s0x0:0x3083fd322d781d31?sa=X&ved=2ahUKEwiE3aKpi4X3AhVws4sKHZnBAZAQ_BJ6BAhOEAU").main__btn Google карти
+
+            include Partical view/footer.pug
+    include Partical view/burger.pug
+
+script(src="Script/script.js",type="module")
+script(src="Script/findUs.js",type="module")

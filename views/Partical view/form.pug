@@ -1,0 +1,16 @@
+.page__form-block.form-block
+    p.form-block__title Заповни форму і ми тобі зателефонуємо
+    .form-block__conatiner._container 
+        form(action="").form-block__form
+            .form-block__input
+                .form-block__block-input 
+                    input(type="text" name="name" class="name" required)
+                    label(for="name") Ім'я
+                    .form-block__underline
+
+                .form-block__block-input 
+                    input(type="tel" name="phone" class="phone" required)
+                    label(for="phone") Телефон
+                    .form-block__underline
+            .form-block__submit
+                input(type="submit" value="Відправити" name="submit" class="sendForm") 
